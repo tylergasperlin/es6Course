@@ -1,4 +1,8 @@
-const root = 'https://www.googleapis.com/books/v1/volumes/?q=isbn:0747532699';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Global from './components/Global'
 
-fetch(root, {method: "GET"}).then(response=> response.json()).then(json => console.log(json));
-
+ReactDOM.render(
+    <Global></Global>,
+    document.getElementById('root')
+)
